@@ -22,7 +22,13 @@ export const LogoContainer = styled.div`
 export const LinkContainer = styled.div`
 	display: flex;
 	align-items: center;
-  gap: .5rem;
+  /* gap: rem; */
+`;
+
+export const LogoLinksContainer = styled.div`
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
 `;
 
 export const StyledLink = styled(Text)`
@@ -31,6 +37,17 @@ export const StyledLink = styled(Text)`
 
 	&:hover {
 		text-decoration: underline;
+	}
+
+	&.linksButton {
+		padding: 0.5rem;
+		text-decoration: none;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #efefef;
+			border-radius: 0.5rem;
+		}
 	}
 `;
 
